@@ -1,6 +1,10 @@
 package org.opentutorials.javatutorials.object;
 
-class Calculator{
+class Calculator {
+    // 클래스 변수
+    static double PI = 3.14;
+
+    // 인스턴스 변수
     int left, right;
 
     public void setOperands(int left, int right){
@@ -26,5 +30,8 @@ public class CalculatorDemo {
         c2.setOperands(20, 40);
         c2.sum();
         c2.avg();
+
+        System.out.println(c1.PI);
+        System.out.println(Calculator.PI);
     }
 }
